@@ -118,7 +118,7 @@ To run the application, you need:
 
 ## 7. Database Configuration
 
-The application uses a MySQL database named `LibraryDB`.
+The application uses a MySQL database named `librarydb`.
 
 The database contains the following main tables:
 
@@ -126,7 +126,15 @@ The database contains the following main tables:
 - `users` – stores registered user information and password hashes.
 - `transactions` – stores borrowing, returning and stock transaction records.
 
-Create the database and tables using the database structure supplied with the project.
+The complete SQL structure and seed data is provided in `schema.sql` (and `backend/schema.sql`).
+You can set up the database automatically by running:
+
+```powershell
+cd backend
+npm run setup-db
+```
+
+Or you can import `schema.sql` directly using MySQL Workbench or the MySQL command line client.
 
 ## 8. Backend Installation
 
@@ -202,7 +210,14 @@ Open the local address displayed by Vite in your browser. Normally, this is:
 4. Enter the corresponding password.
 5. Click Login.
 
-A registered user account is required to access the system.
+A registered user account is required to access the system. The following default accounts are seeded:
+
+| Role | Membership ID | Password | Name |
+|---|---|---|---|
+| Admin | `LIB001` | `admin1234` | Bolepo Tankisang |
+| Librarian | `LIB002` | `admin1234` | Monyooe Moalosi |
+| Member | `MEM001` | `admin1234` | Moeketsi Ratopa |
+| Admin | `ADMIN001` | `MONYOOE666NYOKS777` | System Admin |
 
 ## 11. API Endpoints
 

@@ -1,11 +1,10 @@
-
 .app-layout {
   min-height: 100vh;
 }
 
 .sidebar {
   width: 250px;
-  background: #14233b;
+  background: #22ddb5;
   color: white;
   position: fixed;
   top: 0;
@@ -24,7 +23,7 @@
 }
 
 .brand-icon {
-  background: #3b82f6;
+  background: #22ddb5;
   width: 43px;
   height: 43px;
   border-radius: 12px;
@@ -40,13 +39,13 @@
 }
 
 .brand p {
-  color: #a9b7cb;
+  color: white;
   font-size: 11px;
   margin: 5px 0 0;
 }
 
 .menu-heading {
-  color: #8192aa;
+  color: white;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -59,24 +58,25 @@
 }
 
 .navigation a {
-  color: #c3cede;
+  color: #000000;
   padding: 13px;
   border-radius: 8px;
   font-size: 13px;
   transition: 0.2s;
+  font-style: arial;
 }
 
 .navigation a:hover,
 .navigation a.active {
-  color: white;
-  background: #29456c;
+  color: rgb(28, 108, 235);
+  background: #f47cda;
 }
 
 .sidebar-footer {
   margin-top: auto;
   border-top: 1px solid #34445d;
   padding-top: 20px;
-  color: #c3cede;
+  color: #000000;
   font-size: 12px;
 }
 
@@ -94,7 +94,7 @@
 }
 
 .topbar {
-  background: white;
+  background: #22ddb5;
   height: 75px;
   border-bottom: 1px solid #e8edf4;
   display: flex;
@@ -106,12 +106,12 @@
 .topbar-label {
   font-size: 12px;
   font-weight: 700;
-  color: #64748b;
+  color: #22ddb5;
   letter-spacing: 1px;
 }
 
 .admin-label {
-  background: #edf4ff;
+  background: #22ddb5;
   color: #2563eb;
   padding: 9px 15px;
   border-radius: 30px;
@@ -135,10 +135,11 @@
 .page-heading h1 {
   font-size: 27px;
   margin: 0 0 8px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .page-heading p {
-  color: #718096;
+  color: #22ddb5;
   font-size: 13px;
   margin: 0;
 }
@@ -152,7 +153,7 @@
 
 .stat-card,
 .panel {
-  background: white;
+  background: #22ddb5;
   border: 1px solid #e8edf4;
   border-radius: 12px;
   padding: 23px;
@@ -207,16 +208,17 @@ table {
 }
 
 th {
-  background: #f7f9fc;
+  background: #22ddb5;
   color: #64748b;
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-td, th {
+td,
+th {
   padding: 15px 12px;
-  border-bottom: 1px solid #edf0f5;
+  border-bottom: 1px solid #22ddb5;
   font-size: 12px;
 }
 
@@ -232,7 +234,7 @@ td {
 }
 
 .available {
-  background: #dcfce7;
+  background: #22ddb5;
   color: #15803d;
 }
 
@@ -429,198 +431,198 @@ td {
 
 /* General page layout */
 .page-content {
-    width: 100%;
-    max-width: 1400px;
+  width: 100%;
+  max-width: 1400px;
 }
 
 .page-content h1 {
-    font-size: 30px;
-    color: #1e293b;
-    margin-bottom: 10px;
+  font-size: 30px;
+  color: #1e293b;
+  margin-bottom: 10px;
 }
 
-.page-content > p {
-    color: #64748b;
-    margin-bottom: 25px;
-    font-size: 14px;
+.page-content>p {
+  color: #22ddb5;
+  margin-bottom: 25px;
+  font-size: 14px;
 }
 
 /* Content cards */
 .content-card {
-    background: white;
-    border: 1px solid #e8edf4;
-    border-radius: 12px;
-    padding: 25px;
-    margin-bottom: 25px;
-    box-shadow: 0 3px 12px rgba(25, 40, 65, 0.04);
-    width: 100%;
-    box-sizing: border-box;
+  background: white;
+  border: 5px solid #22ddb5;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 12px rgba(25, 40, 65, 0.04);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .content-card h2 {
-    color: #1e293b;
-    font-size: 19px;
-    margin-top: 0;
-    margin-bottom: 20px;
+  color: #1e293b;
+  font-size: 19px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .content-card p {
-    color: #64748b;
-    font-size: 13px;
+  color: #64748b;
+  font-size: 13px;
 }
 
 /* Forms */
 .page-content form {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 15px;
-    align-items: end;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  align-items: end;
 }
 
 .page-content form label {
-    display: grid;
-    gap: 8px;
-    color: #475569;
-    font-size: 13px;
-    font-weight: 600;
+  display: grid;
+  gap: 8px;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .page-content form input,
 .page-content form select {
-    width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
-    padding: 12px;
-    border: 1px solid #dce3ec;
-    border-radius: 7px;
-    background: white;
-    font-size: 13px;
-    outline: none;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #dce3ec;
+  border-radius: 7px;
+  background: white;
+  font-size: 13px;
+  outline: none;
 }
 
 .page-content form input:focus,
 .page-content form select:focus {
-    border-color: #3b82f6;
+  border-color: #3b82f6;
 }
 
 .page-content form h2,
-.page-content form > p,
-.page-content form > .error,
-.page-content form > .success {
-    grid-column: 1 / -1;
+.page-content form>p,
+.page-content form>.error,
+.page-content form>.success {
+  grid-column: 1 / -1;
 }
 
 .page-content form button {
-    padding: 11px 17px;
-    border: none;
-    border-radius: 7px;
-    background: #2563eb;
-    color: white;
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
+  padding: 11px 17px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .page-content form button:hover {
-    background: #1d4ed8;
+  background: #1d4ed8;
 }
 
 /* Book and user tables */
 .table-container,
 .table-wrapper {
-    width: 100%;
-    overflow-x: auto;
+  width: 100%;
+  overflow-x: auto;
 }
 
 .content-card table {
-    width: 100%;
-    min-width: 750px;
-    border-collapse: collapse;
-    text-align: left;
+  width: 100%;
+  min-width: 750px;
+  border-collapse: collapse;
+  text-align: left;
 }
 
 .content-card th {
-    background: #f7f9fc;
-    color: #64748b;
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    white-space: nowrap;
+  background: #f7f9fc;
+  color: #22ddb5;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
 }
 
 .content-card td,
 .content-card th {
-    padding: 15px 12px;
-    border-bottom: 1px solid #edf0f5;
-    font-size: 12px;
+  padding: 15px 12px;
+  border-bottom: 1px solid #edf0f5;
+  font-size: 12px;
 }
 
 .content-card td {
-    color: #334155;
+  color: #334155;
 }
 
 .content-card td input {
-    width: 100%;
-    min-width: 100px;
-    box-sizing: border-box;
-    padding: 9px;
-    border: 1px solid #dce3ec;
-    border-radius: 6px;
+  width: 100%;
+  min-width: 100px;
+  box-sizing: border-box;
+  padding: 9px;
+  border: 1px solid #dce3ec;
+  border-radius: 6px;
 }
 
 /* Table action buttons */
 .content-card td button {
-    padding: 9px 13px;
-    margin: 3px;
-    border: none;
-    border-radius: 6px;
-    background: #dbeafe;
-    color: #1d4ed8;
-    font-size: 12px;
-    font-weight: 600;
-    cursor: pointer;
-    white-space: nowrap;
+  padding: 9px 13px;
+  margin: 3px;
+  border: none;
+  border-radius: 6px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .content-card td button:hover {
-    opacity: 0.85;
+  opacity: 0.85;
 }
 
 .content-card td button.delete-button {
-    background: #fee2e2;
-    color: #b91c1c;
+  background: #fee2e2;
+  color: #b91c1c;
 }
 
 /* Error and success messages */
 .error {
-    color: #b91c1c;
-    background: #fee2e2;
-    padding: 10px;
-    border-radius: 6px;
-    font-size: 13px;
+  color: #b91c1c;
+  background: #fee2e2;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
 }
 
 .success {
-    color: #15803d;
-    background: #dcfce7;
-    padding: 10px;
-    border-radius: 6px;
-    font-size: 13px;
+  color: #15803d;
+  background: #22ddb5;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
 }
 
 /* Responsive layout */
 @media (max-width: 700px) {
-    .page-content form {
-        grid-template-columns: 1fr;
-    }
+  .page-content form {
+    grid-template-columns: 1fr;
+  }
 
-    .content-card {
-        padding: 16px;
-    }
+  .content-card {
+    padding: 16px;
+  }
 
-    .page-content h1 {
-        font-size: 24px;
-    }
+  .page-content h1 {
+    font-size: 24px;
+  }
 }
